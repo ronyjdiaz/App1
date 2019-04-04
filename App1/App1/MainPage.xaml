@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <StackLayout  VerticalOptions="Center"  HorizontalOptions="Center">
+
+        <StackLayout Orientation="Horizontal" Padding="20">
+            <Label Text="Nombre de usuario"></Label>
+            <Entry x:Name="txtName" Placeholder="Nombre de usuario"></Entry>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Padding="20">
+            <Label Text="Contrasena"></Label>
+            <Entry x:Name="txtPassword"  IsPassword="True" Placeholder="******"></Entry>
+        </StackLayout>
+
+        
+            <Button x:Name="btnConnect" Text="Conectar" Padding="30"></Button>
+        <StackLayout Orientation="Horizontal" Padding="20">
+            <Label Text="Estado: "></Label>
+            <Label x:Name="lblStatus"></Label>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Padding="20">
+            <Label Text="Usuario a enviar: "></Label>
+            <Entry x:Name="txtUserDestiny" Placeholder="Nombre de usuario"></Entry>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Padding="20">
+            
+            <Entry x:Name="txtMessage" Placeholder="Nombre de usuario" HorizontalOptions="FillAndExpand"></Entry>
+        </StackLayout>
+
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
